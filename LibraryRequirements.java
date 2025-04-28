@@ -7,4 +7,5 @@ interface LibraryRequirements {
     boolean containsTitle(String title);
     boolean isAvailable(String title);
     void printCollection(); 
+    
 }

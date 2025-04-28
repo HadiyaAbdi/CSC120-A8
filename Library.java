@@ -43,7 +43,11 @@ class Library extends Building {
     }
     // remove books
     public String removeTitle(String title){
-      return collection.remove(title) != null ? title + " has been removed, and isnt in the collection": null;
+      if (collection.containsKey(title)) {
+        collection.remove(title);
+        return title + " has been removed, and is not in the collection";
+      } else {
+       return title + " is not in the collection";}
     }
 // check out books //overloaded
     public void checkOut(String titlesString){
@@ -57,29 +61,19 @@ class Library extends Building {
         }
       }
     }
-    //String[] titles = null;
-      //for(String title: titles){
-      //  if(Boolean.TRUE.equals(collection.get(title))){
-      //  collection.replace(title, false);
-      //  System.out.println(title + " has been checked");
-    //  }else{
-      //  System.out.println(title + "Not available");
-     // }}
-   // }
-//return books
     public void returnBook(String title){
       if(collection.containsKey(title)){
         collection.replace(title, true);
-        System.out.println(title + "returned");
+        System.out.println(title + " returned");
 
       }else{
-        System.out.println(title + "Not in the collection");
+        System.out.println(title + " Not in the collection");
       }
     }
     
   
     public static void main(String[] args) {
-     Library Gabiley = new Library("Gabiley", "21 Laagbarako  st", 2, hasElevator);
+     Library Gabiley = new Library("Gabiley", "21 Laagbarako  st", 2, true);
       Gabiley.addTitle(new String[]{"The Maktabad", "Java floor2"});
     }
   

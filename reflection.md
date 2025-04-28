@@ -8,6 +8,7 @@ Library class - addTitle and checkOut: it will add and checkout multiple books a
 Cafe class - sellCoffee and restock: it now allows for multiple items to be restocked and specified into categories.
 
 House class - moveIn, and moveOut: it allows to move out or move in multiples students at once. 
+I chose to overload those specifically because they make my program more accessible at once rather than forcing users to do things one at a time. it reflects the realistic situations like roommates moving in togther. 
 
 - What worked, what didn't, what advice would you give someone taking this course in the future?
-overloading was far more flexible but would ran into some errors often but was good overall. Something that would be helpful to remember is that you should use the overlaoaded methods inside your main too. overlaoding has different paramaets list.
+Overloading was far more flexible but would ran into some errors often but was good overall. Something that would be helpful to remember is that you should use the overlaoaded methods inside your main too. overlaoding has different paramaets list.

@@ -18,8 +18,6 @@ public class Course { //Used Copilot fix to help create this
 
     }
 
-
-
     @Override
 
     public String toString() {

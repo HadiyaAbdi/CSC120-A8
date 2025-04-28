@@ -1,5 +1,5 @@
 interface CafeRequirements {
 
-    void sellCoffee(int size, int nSugarPackets, int nCreams);
+    public void sellCoffee(int size, int nSugarPackets, int nCreams, String coffeeType);
     
 }

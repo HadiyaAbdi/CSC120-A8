@@ -5,7 +5,7 @@ public class House extends Building{
   private boolean hasDiningRoom;
   // Constructor
   public House(String name, String address, int nFloors, boolean hasDiningRoom) {
-    super(name, address,nFloors, hasDiningRoom); // Call the constructor of the Building class
+    super(name, address,nFloors, true); // Call the constructor of the Building class
     this.residents = new ArrayList<Student>();
     this.hasDiningRoom = hasDiningRoom;
     System.out.println("You have built a house: 🏠");
@@ -42,30 +42,16 @@ public class House extends Building{
             System.out.println(abdule.getName() + " is already a resident of " + this.getName());
         }
     }
-    //if(!residents.contains(s)){
-     // residents.add(s);
-     // System.out.println(s.getName() + " has moved into " + this.getName());
-   // }else{
-      //System.out.println(s.getName() + " is a resident of " + this.getName());
-   // }
- // }
-// move students out of the house //overloaded
-  public void moveOut(Student hibaaq){
-    for(Student s : hibaaq) {
-      moveOut(hibaaq);
-    }
-    //if(residents.contains(s)){
-     //residents.remove(s);
-      //System.out.println(s.getName() + " has moved out of " + this.getName());
-     // return s;
-    //}
-   // else{
-    //  System.out.println(s.getName() + " is not a resident of " + this.getName());
-      //return null;
-   // }
-       
+  public Student moveOut(Student s){
+      if(residents.contains(s)){
+          residents.remove(s);
+          System.out.println(s.getName() + " has moved out of " + this.getName());
+          return s;
+      } else {
+          System.out.println(s.getName() + " is not a resident of " + this.getName());
+          return null;
+      }
   }
-// method to check if a student is a resident
   public boolean isResident(Student s) {
     return residents.contains(s);
   }

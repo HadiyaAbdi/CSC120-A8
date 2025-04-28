@@ -5,4 +5,5 @@ interface BuildingRequirements {
     int getFloors();
     void showOptions(); 
     void goToFloor(int floorNum); 
+
 }

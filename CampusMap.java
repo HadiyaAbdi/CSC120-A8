@@ -42,7 +42,7 @@ public class CampusMap {
 
     public static void main(String[] args) {
         CampusMap myMap = new CampusMap();
-        myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4, false));
+        myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4, true));
         myMap.addBuilding(new Building("Bass Hall", "4 Tyler Court Northampton, MA 01063", 4, false));
 
         //House
@@ -73,9 +73,9 @@ public class CampusMap {
             cc.restock(10, 1, 0, 5);
 
             // adding builidng 
-            myMap.addBuilding(new Building("Musuem of Art", "100 Green Street Northampton, MA 01063", 4, false));
+            myMap.addBuilding(new Building("Musuem of Art", "100 Green Street Northampton, MA 01063", 4,true));
             myMap.addBuilding(new Building("McConnel Hall", "10 green street", 4, true));
-            myMap.addBuilding(new Building("Gillet House", "10 Green street", 2, true));
+            myMap.addBuilding(new Building("Gillet House", "10 Green street", 2, false));
             myMap.addBuilding(new Building("Lamont House", "10 Green street", 0, false));
             myMap.addBuilding(new Building("Albright House", "10 Green street", 3, true));
 

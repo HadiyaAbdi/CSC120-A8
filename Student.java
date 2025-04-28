@@ -28,6 +28,5 @@ public class Student {
         Course csc120 = new Course("Intro to Computer Science", "CSC120", "MWF 10:00-11:00");
         ab.classes.add(csc120);
         System.out.println(ab.classes);
-    }
-    
+    } 
 }
